@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNCHAINEDIAM | Hood Cast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Left Three Line Menu Navigation -->
+    <div class="menu-container">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div id="sidebarMenu" class="sidebar-menu">
+            <a href="#" onclick="openTab('signup')">Sign Up</a>
+            <a href="#" onclick="openTab('signin')">Sign In</a>
+            <a href="#" onclick="openTab('profile')">Profile</a>
+            <a href="#" onclick="openTab('surf')">Surf</a>
+            <a href="#" onclick="openTab('win')">Win More</a>
+        </div>
+    </div>
+
+    <!-- Centered Header Layout & Trademark -->
+    <header class="header-main">
+        <h1 class="trademark-title">UNCHAINEDIAM</h1>
+        <div class="trademark-sub">⛓️<span class="micro-iam">IAM</span>⛓️</div>
+        
+        <!-- User Social Network Connect Row - Appears Below Header When Triggered -->
+        <div id="socialNetworkBar" class="social-bar hidden">
+            <a href="#" class="soc-link">Instagram</a>
+            <a href="#" class="soc-link">Facebook</a>
+            <a href="#" class="soc-link">Twitter</a>
+            <a href="#" class="soc-link">YouTube</a>
+            <a href="#" class="soc-link">TikTok</a>
+        </div>
+    </header>
+
+    <!-- Main Dynamic Interface Viewports -->
+    <main class="content-container">
+        <!-- Podcast Stream Frame -->
+        <section id="view-podcast" class="content-view">
+            <h2>Hood Cast Live Feed</h2>
+            <div class="video-container">
+                <div class="video-placeholder">Live Video Stream Feed (Real-Time Smile & Tooth Enhancement Active)</div>
+            </div>
+            <button onclick="connectFaceTime()" class="btn-primary">Connect Guest FaceTime Node</button>
+        </section>
+
+        <!-- Merch Viewport -->
+        <section id="view-merch" class="content-view hidden">
+            <h2>Official Merch Drop</h2>
+            <p>Sovereign distributed storefront catalog incoming.</p>
+        </section>
+
+        <!-- AI Boo Conversational Wizard Onboarding Frame -->
+        <section id="view-aiboo" class="content-view hidden">
+            <h2>AI Boo System Onboarding</h2>
+            <div id="ai-boo-box" class="ai-box">
+                <div id="ai-question" class="question-text">Initializing AI Companion Configurator...</div>
+                <div id="ai-input-wrapper"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Right Sidebar Interactive 3D Cartoon Messenger -->
+    <div id="cartoonMessenger" class="messenger-sidebar">
+        <div class="avatar-head">🤖</div>
+        <div class="chat-bubble">Internal AI Stack Operational. Secure Voice Authentication Required.</div>
+    </div>
+
+    <!-- Three Bottom Tabs Layout & Institutional Policy Links Footer -->
+    <footer class="footer-container">
+        <nav class="nav-tabs">
+            <button onclick="switchView('podcast')">Podcast</button>
+            <button onclick="switchView('merch')">Merch</button>
+            <button onclick="switchView('aiboo')">AI Boo</button>
+        </nav>
+        <div class="footer-legal">
+            <a href="#">About</a>
+            <a href="#">Affiliate Program</a>
+            <a href="#">Copyright</a>
+            <a href="#">Publishing</a>
+            <a href="#">Trademark</a>
+            <a href="#">Blog</a>
+            <a href="#">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
